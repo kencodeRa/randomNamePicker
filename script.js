@@ -1,8 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-let selectedFile;
+var selectedFile;
+let availableNames = [];
+
 
 document.getElementById('file').addEventListener('change', function(event) {
     selectedFile = event.target.files[0];
+
+    availableNames.input = selectedFile ? true : false;
+    document.querySelector('.start').disabled = !availableNames.input;
 });
 
 document.getElementById('showName').addEventListener('click', () => {
