@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    transition: all .5s ease;
+}
+
+.container{
+    padding: 0px;
+    margin-top: 20vh;
+    margin-left: 35%;
+    width: 30rem;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+    transition: all .5 ease;
+    overflow: hidden;
+}
+
+.container .title{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #388087;
+    text-shadow: #388087 1px 1px 1px, #388087 0 0 25px, #388087 0 0 5px;
+    cursor: pointer;
+}   
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .content input{
+    width: 50vh;
+    height: 10vh;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.container .btn-container{
+    padding-top: 10px;
+    height: 3rem;
+    gap: 3rem;
+}
+.container .btn-container button{
+    width: 12em;
+    height: 3rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+
+.container .btn-container button:hover{
+    outline: none;
+    box-shadow: 0 0 5px #26B170;
+    cursor: hand;
+}       
+.start{
+    background-color: #388087;
+    color: white;
+}
+.start:disabled{
+    background-color: grey;
+    color: white;
+}
+.pick{
+    background-color: #26B170;
+    color: white;
+}
